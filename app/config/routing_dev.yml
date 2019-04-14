@@ -2,7 +2,7 @@ _welcome:
     pattern:  /
     defaults:
         _controller: FrameworkBundle:Redirect:redirect
-        route: get_notes
+        route: _login
         permanent: true # this for 301
 _login:
     pattern:  /login
