@@ -1,0 +1,31 @@
+
+
+{% block content_header '' %}
+
+{% block content %}
+    <h1 class="title">Create New Product</h1>
+
+    {%  if (form is defined) %}
+        <form action="{{ url('post_products') }}" method="POST" {{ form_enctype(form) }}>
+
+            {{ form_widget(form) }}
+
+            <input type="submit" value="Add New Product">
+        </form>
+    {% endif %}
+
+{% endblock %}
+
+{% set code = code(_self) %}
+
+
+<br>
+<br>
+<form action="{{ path('_login') }}" method="get">
+
+    <input type="hidden" id="home" name =home value = 1>
+
+    <button type="submit">Home</button>
+
+
+</form>

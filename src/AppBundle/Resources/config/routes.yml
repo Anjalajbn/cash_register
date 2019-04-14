@@ -1,0 +1,5 @@
+prd_backend_type:
+  resource: "AppBundle\Controller\ProductController.php"
+  type: rest
+  name_prefix: api_prd_
+  prefix: /prd

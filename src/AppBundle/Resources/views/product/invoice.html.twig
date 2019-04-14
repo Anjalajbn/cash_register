@@ -1,0 +1,69 @@
+<h1> Receipt</h1>
+
+<form action="{{ path('get_product_barcode') }}" method="get">
+    Enter barcode
+    <input type="hidden" id="barcodes" name =barcodes value = {{ barcodes }}>
+
+    <input type="text" id="barcode" name="barcode" >
+    <button type="submit">Add</button>
+
+
+</form>
+
+
+
+<br>
+<br>
+<br>
+{% set total = 0  %}
+
+{% if lists is defined and lists is not empty  and barcodes is not empty%}
+
+<table style="width:100%;  border: 1
+" >
+    <thead>
+    <tr >
+        <th >Product ID</th>
+
+        <th >Product Code</th>
+        <th >Product Name</th>
+        <th >Cost</th>
+        <th >Vat Class</th>
+    </tr>
+    </thead>
+    <tbody  id="listData">
+        {% set i=1 %}
+        {% for products in lists %}
+
+        {% for product in products %}
+            {% set total = total +product.cost %}
+            <tr align="center">
+                <td>{{ product.id }} </td>
+
+                <td>{{ product.barcode }}</td>
+                <td>{{ product.name }}</td>
+                <td>${{ product.cost }} </td>
+                <td>{{ product.vatClass }} $</td>
+
+            </tr>
+        {% endfor %}
+        {% endfor %}
+            {% endif %}
+    <tr align="right"><td>total</td>
+    <td>
+        {{ total }}
+    </td></tr>
+    </tbody>
+</table>
+
+
+<br>
+<br>
+<form action="{{ path('_login') }}" method="get">
+
+    <input type="hidden" id="home" name =home value = 1>
+
+    <button type="submit">Home</button>
+
+
+</form>

@@ -1,0 +1,19 @@
+You are logged in !!
+
+
+
+<form action="{{ path('get_product_barcode') }}" method="get">
+    Find by Barcode
+    <input type="text" id="barcode" name="barcode" >
+    <button type="submit">Get</button>
+
+
+</form>
+
+<form action="{{ path('get_invoice') }}" method="get">
+    <button type="submit">Create Invoice</button>
+</form>
+
+<form action="{{ path('_login') }}" method="get">
+    <button type="submit">Logout</button>
+</form>

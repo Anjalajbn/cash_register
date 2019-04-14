@@ -1,0 +1,39 @@
+<table style="width:100%;  border: 1
+" >
+    <thead>
+    <tr >
+        <th >Product ID</th>
+
+        <th >Product Code</th>
+        <th >Product Name</th>
+        <th >Cost</th>
+        <th >Vat Class</th>
+    </tr>
+    </thead>
+    <tbody  id="listData">
+    {% if lists is defined and lists is not empty %}
+    {% set i=1 %}
+    {% for product in lists %}
+        <tr align="center">
+            <td>{{ product.id }} </td>
+
+            <td>{{ product.barcode }}</td>
+            <td>{{ product.name }}</td>
+            <td>${{ product.cost }} </td>
+            <td>{{ product.vatClass }} $</td>
+
+        </tr>
+    {% endfor %}
+{% endif %}
+    </tbody>
+</table>
+<br>
+<br>
+<form action="{{ path('_login') }}" method="get">
+
+    <input type="hidden" id="home" name =home value = 1>
+
+    <button type="submit">Home</button>
+
+
+</form>

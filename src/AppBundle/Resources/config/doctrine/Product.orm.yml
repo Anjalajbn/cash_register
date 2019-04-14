@@ -1,0 +1,24 @@
+AppBundle\Entity\Product:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Entity\ProductRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        barcode:
+            type: string
+            length: 255
+        name:
+            type: string
+            length: 255
+        cost:
+            type: integer
+        vatClass:
+            type: string
+            length: '50'
+            column: vat_class
+    lifecycleCallbacks: {  }

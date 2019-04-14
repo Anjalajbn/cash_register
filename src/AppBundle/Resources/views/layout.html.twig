@@ -1,0 +1,22 @@
+{% extends "TwigBundle::layout.html.twig" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ asset('bundles/app/css/demo.css') }}" />
+{% endblock %}
+
+{% block title 'Demo Bundle' %}
+
+{% block body %}
+    {% block content_header %}
+        <ul id="menu">
+        </ul>
+
+        <div style="clear: both"></div>
+    {% endblock %}
+
+    <div class="block">
+        {% block content %}{% endblock %}
+
+        </div>
+#}
+{% endblock %}

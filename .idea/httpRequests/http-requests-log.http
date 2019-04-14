@@ -1,0 +1,286 @@
+GET http://localhost/restapi1/web/app_dev.php
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T101938.200.html
+
+###
+
+GET http://localhost/restapi1/web/app_dev.php
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T101856.200.html
+
+###
+
+GET /80
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET /localhost
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET /localhost
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET /http://localhost/restapi1/web/app_dev.php/notes
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET /localhost
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET /localhost
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET /localhost
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost/product/1%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T084030.404.html
+
+###
+
+GET http://localhost/localhost/restapi1/product/1%20--json
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T084018.404.html
+
+###
+
+GET /localhost
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost/notes/new
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081753-1.404.html
+
+###
+
+GET http://localhost/notes/new
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081753.404.html
+
+###
+
+GET http://localhost/notes/new
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081751.404.html
+
+###
+
+GET http://localhost/notes/new
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081746.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081658-4.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081658-3.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081658-2.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081658-1.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081658.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081657-1.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081657.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081656.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081655.404.html
+
+###
+
+GET http://localhost/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081649.404.html
+
+###
+
+GET http://localhost/localhost/restapi1/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081641.404.html
+
+###
+
+GET http://localhost/localhost/restapi1/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081636.404.html
+
+###
+
+GET http://localhost/localhost/restapi1/app_dev.php/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081623.404.html
+
+###
+
+GET http://localhost/http://localhost/app_dev.php/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081559.403.html
+
+###
+
+GET http://localhost/http://localhost/app_dev.php/notes%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T081555.403.html
+
+###
+
+GET http://localhost/http://localhost/app_dev.php/notes%20--json%20-a%20restapi:secretpw%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T080132.403.html
+
+###
+
+GET http://localhost/http://localhost/restapi1/notes%20--json%20-a%20restapi:secretpw%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T075642.403.html
+
+###
+
+GET http://localhost/http://localhost/restapi1/web/app.php/notes%20--json%20-a%20restapi:secretpw%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T075633.403.html
+
+###
+
+GET http://localhost/http://localhost/restapi1/web/app_dev.php/notes%20--json%20-a%20restapi:secretpw%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T075613.403.html
+
+###
+
+GET http://localhost/http%20"http://localhost/restapi1/web/app_dev.php/notes"%20--json%20-a%20restapi:secretpw%20
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost/http://localhost/restapi1/ap/product/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T074644.403.html
+
+###
+
+GET http://localhost/restapi1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-04-13T074606.200.html
+
+###
+

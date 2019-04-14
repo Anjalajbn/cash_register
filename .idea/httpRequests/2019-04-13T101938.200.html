@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <title>Symfony - Notes</title>
+    <link href="http://localhost/restapi1/web/bundles/framework/css/structure.css" rel="stylesheet"/>
+    <link href="http://localhost/restapi1/web/bundles/framework/css/body.css" rel="stylesheet"/>
+    <link rel="icon" sizes="16x16" href="/restapi1/web/favicon.ico"/>
+    <link rel="stylesheet" href="/restapi1/web/bundles/app/css/demo.css"/>
+</head>
+<body>
+<div id="content">
+    <div class="header clear-fix">
+        <div class="header-logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAAA+CAMAAACxzRGDAAAAUVBMVEX////Ly8yko6WLioxkYmVXVVkwLjLl5eWxsLJKSEzy8vJxcHLY2Ni+vb89Oz9XVVh+fH+Yl5n///+xsbLY2Nlxb3KkpKWXlph+fX+LiYy+vr/IZP61AAAAAXRSTlMAQObYZgAABRBJREFUeNrVmtuWoyAQRS1FEEQSzQU7//+hYxUiXsKQZLJWM+chsUloN+WhCuguYoKyYqzmvGasKqH4HyRKxndipcgcumH8qViTM7TkUclcwaHmf5XM0eWq4km1KjdqXfMXJHVe1J3hL8lk5fCGv6wmT+o0d87U+XNrk0Y9nfv+7LM6ZJH5ZBL6LAbSxQ3Q5FDr22Skr8PQSy4n7isnsQxSX4r6pobhjCHHeDNOKrO3yGmCvZOjV9jmt8ulTdXFKdbKLNh+kOMvBzuVRa4Y7MUsdEUSWQe7xxCfZmcwjHU83LqzFvSbJQOXQvptbPnEFoyZtUUGwTeKuLuTHyT1kaP0P6cR01OKvv448gtl61dqZfmJezQmU/t+1R2fJLtBwXV6uWGwB9SZPrn0fKO2WAvQN1PUhHjTom3xgXYTkvlSKHs19OhslETq6X3HrXbjt8XbGj9b4Gi+lUAnL6XxQj8Pyk9N4Bt1xUrsLVN/3isYMug8rODMdbgOvoHs8uAb2fcANIAzkKCLYy+AXRpSU8sr1r4P67xhLgPp7vM32zlqt7Bhq2fI1Hwp+VgANxok59SsGV3oqdUL0YVDMRY7Yg8QLbVUU4NZNoOq5hJHuxEM28Sh/IyUZ8D3reR+yc58EGvOy2U0HQL6G9V+kWyEWHmzaMx6t4o9RhOm/riUiYrzqij4Ptqkn7AaCXqc+F47m04ahfde7YIz8RHEBN6BdVwdIGRVdNbKqYu1Hc0x0wBY4wqC8+XUgBGnj81SZsQB+0yAS1x/BlI/6ebHHk0lauQLuPDpu6EwAVJ7T0rl2uXa23jcqNyOZekhqYHRz3JOANrF4wCCmEs1f9D1lUe0n4NAATed80Y5e0Q7CO2TezM/BR6wKdgQzKbCF4uOQC3Bk0fKAzbFlyRWg3gksA/gmm7eOjrpaKX7fHlEW2xLbE6GZsPiCiShVzN7RG2xTz2G+OJtEqzdJ7APxy3MrSsV0VukXbKMp9lhs5BN6dr3CN+sySUaoxGwfRUM3I/gdPYONgVU+PLX4vUWm32AvUySarbONvcpV2RQEPKKjEBHFk01kQDGRblnn8ZuE9g+JUl8OWAPbkFK2K6JxhJVvF47FzYYnAN22ttwxKYCoH36rheEB7KG/HF/YUaa2G5JF+55tpyrl7B1WHM39HuP2N2EXPl1UBu8vbj4OjvD+NoTE4ssF+ScARgaJY1N7+u8bY/Y9BSM5PKwJbvMVab32YP5FB5TtcYVrGoASolVLTzI7kVsYVxRtAb5n2JXq1vCdtd47XtYItynrN0835PasLg0y13aOPbmPI+on2Lr9e5tjSHvgkAvclUjL3Fsdaw03IzgTR62yYClk7QMah4IQ0qSsoYYbOix6zJR1ZGDNMOY3Bb6W5S6jiyovep3t7bUPyoq7OkjYumrfESp8zSBc/OLosVf+nTnnKjsqR16++WDwpI8FxJWRFTlI6NKnqYJaL96TqjAbo9Toi5QiWBDcmfdFV+T8dkvFe5bItgstbM2X6QG2mVun+cazfRwOS0eiaeRRJKgLfc3BQAqfnhJyz8lfR6580SF/FXVu83Nz1xrrnFqqXL6Qxl47DNSm4RFflvN5sABDD8peouqLLKQXVdGbnqf+qIpOxON4ZyYdJEJ6sy4zS2c5eRPTT4Jyp46qDE5/ptAWqJOQ9e6yE82FXBbZCk1/tXVoshVoopE3CB0zmraI3nbqCJ/gW3ZMgtbC5nh/QHlOoOZBxQCRgAAAABJRU5ErkJggg=="
+                 alt="Symfony"/>
+        </div>
+
+        <div class="search">
+            <form method="get" action="https://symfony.com/search" target="_blank">
+                <div class="form-row">
+                    <label for="search-id">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAABUElEQVQoz2NgAIJ29iBdD0d7X2cPb+tY2f9MDMjgP2O2hKu7vS8CBlisZUNSMJ3fxRMkXO61wm2ue6I3iB1q8Z8ZriDZFCS03fm/wX+1/xp/TBo8QPxeqf+MUAW+QIFKj/+q/wX/c/3n/i/6Qd/bx943z/Q/K1SBI1D9fKv/AhCn/Wf5L5EHdFGKw39OqAIXoPpOMziX4T9/DFBBnuN/HqhAEtCKCNf/XDA/rZRyAmrpsvrPDVUw3wrkqCiLaewg6TohX1d7X0ffs5r/OaAKfinmgt3t4ulr4+Xg4ANip3j+l/zPArNT4LNOD0pAgWCSOUIBy3+h/+pXbBa5tni0eMx23+/mB1YSYnENroT5Pw/QSOX/mkCo+l/jgo0v2KJA643s8PgAmsMBDCbu/5xALHPB2husxN9uCzsDOgAq5kAoaZVnYMCh5Ky1r88Eh/+iABM8jUk7ClYIAAAAAElFTkSuQmCC"
+                             alt="Search on Symfony website"/>
+                    </label>
+
+                    <input name="q" id="search-id" type="search" placeholder="Search on Symfony website"/>
+
+                    <button type="submit" class="sf-button">
+                                <span class="border-l">
+                                    <span class="border-r">
+                                        <span class="btn-bg">OK</span>
+                                    </span>
+                                </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="sf-reset">
+
+        <div class="block">
+            <h1 class="title">Available notes</h1>
+
+            <p>
+                offset: -, limit: 5
+            </p>
+
+            <ul id="note-list">
+                <li>No notes found</li>
+            </ul>
+            <p>
+                <a href="/restapi1/web/app_dev.php/notes/new">create new note</a>
+            </p>
+
+            <p>
+                <a href="/restapi1/web/app_dev.php/api/doc">API documentation</a>
+            </p>
+        </div>
+
+        <h2>Code behind this page</h2>
+        <div class="block">
+            <div class="symfony-content"><p><strong>Controller Code</strong></p>
+                <pre><code><span style="color: #000000">
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #FF8000">/**
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;List&nbsp;all&nbsp;notes.
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@ApiDoc(
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;resource&nbsp;=&nbsp;true,
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;statusCodes&nbsp;=&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200&nbsp;=&nbsp;"Returned&nbsp;when&nbsp;successful"
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;}
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@Annotations\QueryParam(name="offset",&nbsp;requirements="\d+",&nbsp;nullable=true,&nbsp;description="Offset&nbsp;from&nbsp;which&nbsp;to&nbsp;start&nbsp;listing&nbsp;notes.")
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@Annotations\QueryParam(name="limit",&nbsp;requirements="\d+",&nbsp;default="5",&nbsp;description="How&nbsp;many&nbsp;notes&nbsp;to&nbsp;return.")
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@Annotations\View()
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;ParamFetcherInterface&nbsp;$paramFetcher&nbsp;param&nbsp;fetcher&nbsp;service
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;array
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br/>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span
+                        style="color: #0000BB">getNotesAction</span><span style="color: #007700">(</span><span
+                        style="color: #0000BB">ParamFetcherInterface&nbsp;$paramFetcher</span><span
+                        style="color: #007700">)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$offset&nbsp;</span><span
+                        style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$paramFetcher</span><span
+                        style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span
+                        style="color: #007700">(</span><span style="color: #DD0000">'offset'</span><span
+                        style="color: #007700">);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$start&nbsp;</span><span
+                        style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span
+                        style="color: #007700">==&nbsp;</span><span style="color: #0000BB">$offset&nbsp;</span><span
+                        style="color: #007700">?&nbsp;</span><span style="color: #0000BB">0&nbsp;</span><span
+                        style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$offset&nbsp;</span><span
+                        style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span
+                        style="color: #007700">;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$limit&nbsp;</span><span
+                        style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$paramFetcher</span><span
+                        style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span
+                        style="color: #007700">(</span><span style="color: #DD0000">'limit'</span><span
+                        style="color: #007700">);
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$notes&nbsp;</span><span
+                        style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span
+                        style="color: #007700">-&gt;</span><span style="color: #0000BB">getNoteManager</span><span
+                        style="color: #007700">()-&gt;</span><span style="color: #0000BB">fetch</span><span
+                        style="color: #007700">(</span><span style="color: #0000BB">$start</span><span
+                        style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$limit</span><span
+                        style="color: #007700">);
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;new&nbsp;</span><span style="color: #0000BB">NoteCollection</span><span
+                        style="color: #007700">(</span><span style="color: #0000BB">$notes</span><span
+                        style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$offset</span><span
+                        style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$limit</span><span
+                        style="color: #007700">);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/></span>
+</span>
+</code></pre>
+
+                <p><strong>Template Code</strong></p>
+                <pre>{% extends &quot;AppBundle::layout.html.twig&quot; %}
+
+{% block title &quot;Symfony - Notes&quot; %}
+
+{% block content_header &#039;&#039; %}
+
+{% block content %}
+    &lt;h1 class=&quot;title&quot;&gt;{{ &#039;note.list.headline&#039;|trans({}, &#039;AppBundle&#039;) }}&lt;/h1&gt;
+
+    &lt;p&gt;
+        {{ &#039;note.offset&#039;|trans({}, &#039;AppBundle&#039;) }}: {{ data.offset ?: &#039;-&#039; }}, {{ &#039;note.limit&#039;|trans({}, &#039;AppBundle&#039;) }}: {{ data.limit }}
+    &lt;/p&gt;
+
+    &lt;ul id=&quot;note-list&quot;&gt;
+        {% for id, note in data.notes %}
+        &lt;li&gt;
+            &lt;a href=&quot;{{ path(&#039;get_note&#039;, {&#039;id&#039;: id}) }}&quot;&gt;{{ note }}&lt;/a&gt;
+            [&lt;a href=&quot;{{ path(&#039;edit_notes&#039;, {&#039;id&#039;: id}) }}&quot;&gt;{{ &#039;note.edit.link&#039;|trans({}, &#039;AppBundle&#039;) }}&lt;/a&gt;]
+            [&lt;a href=&quot;{{ path(&#039;remove_notes&#039;, {&#039;id&#039;: id}) }}&quot;&gt;{{ &#039;note.remove.link&#039;|trans({}, &#039;AppBundle&#039;) }}&lt;/a&gt;]
+        &lt;/li&gt;
+        {% else %}
+        &lt;li&gt;{{ &#039;note.list.empty&#039;|trans({}, &#039;AppBundle&#039;) }}&lt;/li&gt;
+        {% endfor %}
+    &lt;/ul&gt;
+    &lt;p&gt;
+        &lt;a href=&quot;{{ path(&#039;new_note&#039;) }}&quot;&gt;{{ &#039;note.new.link&#039;|trans({}, &#039;AppBundle&#039;) }}&lt;/a&gt;
+    &lt;/p&gt;
+{% endblock %}
+
+
+</pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sfwdtc1add4" class="sf-toolbar" style="display: none"></div>
+<script>/*<![CDATA[*/
+Sfjs = (function () {
+    "use strict";
+    var noop = function () {
+    }, collectionToArray = function (collection) {
+        var length = collection.length || 0, results = new Array(length);
+        while (length--) {
+            results[length] = collection[length];
+        }
+        return results;
+    }, profilerStorageKey = 'sf2/profiler/', request = function (url, onSuccess, onError, payload, options) {
+        var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+        options = options || {};
+        options.maxTries = options.maxTries || 0;
+        xhr.open(options.method || 'GET', url, true);
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        xhr.onreadystatechange = function (state) {
+            if (4 !== xhr.readyState) {
+                return null;
+            }
+            if (xhr.status == 404 && options.maxTries > 1) {
+                setTimeout(function () {
+                    options.maxTries--;
+                    request(url, onSuccess, onError, payload, options);
+                }, 500);
+                return null;
+            }
+            if (200 === xhr.status) {
+                (onSuccess || noop)(xhr);
+            } else {
+                (onError || noop)(xhr);
+            }
+        };
+        xhr.send(payload || '');
+    }, hasClass = function (el, klass) {
+        return el.className && el.className.match(new RegExp('\\b' + klass + '\\b'));
+    }, removeClass = function (el, klass) {
+        if (el.className) {
+            el.className = el.className.replace(new RegExp('\\b' + klass + '\\b'), ' ');
+        }
+    }, addClass = function (el, klass) {
+        if (!hasClass(el, klass)) {
+            el.className += " " + klass;
+        }
+    }, getPreference = function (name) {
+        if (!window.localStorage) {
+            return null;
+        }
+        return localStorage.getItem(profilerStorageKey + name);
+    }, setPreference = function (name, value) {
+        if (!window.localStorage) {
+            return null;
+        }
+        localStorage.setItem(profilerStorageKey + name, value);
+    }, requestStack = [], extractHeaders = function (xhr, stackElement) {                /* Here we avoid to call xhr.getResponseHeader in order to */                /* prevent polluting the console with CORS security errors */
+        var allHeaders = xhr.getAllResponseHeaders();
+        var ret;
+        if (ret = allHeaders.match(/^x-debug-token:\s+(.*)$/im)) {
+            stackElement.profile = ret[1];
+        }
+        if (ret = allHeaders.match(/^x-debug-token-link:\s+(.*)$/im)) {
+            stackElement.profilerUrl = ret[1];
+        }
+    }, renderAjaxRequests = function () {
+        var requestCounter = document.querySelectorAll('.sf-toolbar-ajax-requests');
+        if (!requestCounter.length) {
+            return;
+        }
+        var tbodies = document.querySelectorAll('.sf-toolbar-ajax-request-list');
+        var state = 'ok';
+        if (tbodies.length) {
+            var tbody = tbodies[0];
+            var rows = document.createDocumentFragment();
+            if (requestStack.length) {
+                for (var i = 0; i < requestStack.length; i++) {
+                    var request = requestStack[i];
+                    var row = document.createElement('tr');
+                    rows.appendChild(row);
+                    var methodCell = document.createElement('td');
+                    if (request.error) {
+                        methodCell.className = 'sf-ajax-request-error';
+                    }
+                    methodCell.textContent = request.method;
+                    row.appendChild(methodCell);
+                    var pathCell = document.createElement('td');
+                    pathCell.className = 'sf-ajax-request-url';
+                    if ('GET' === request.method) {
+                        var pathLink = document.createElement('a');
+                        pathLink.setAttribute('href', request.url);
+                        pathLink.textContent = request.url;
+                        pathCell.appendChild(pathLink);
+                    } else {
+                        pathCell.textContent = request.url;
+                    }
+                    pathCell.setAttribute('title', request.url);
+                    row.appendChild(pathCell);
+                    var durationCell = document.createElement('td');
+                    durationCell.className = 'sf-ajax-request-duration';
+                    if (request.duration) {
+                        durationCell.textContent = request.duration + "ms";
+                    } else {
+                        durationCell.textContent = '-';
+                    }
+                    row.appendChild(durationCell);
+                    row.appendChild(document.createTextNode(' '));
+                    var profilerCell = document.createElement('td');
+                    if (request.profilerUrl) {
+                        var profilerLink = document.createElement('a');
+                        profilerLink.setAttribute('href', request.profilerUrl);
+                        profilerLink.textContent = request.profile;
+                        profilerCell.appendChild(profilerLink);
+                    } else {
+                        profilerCell.textContent = 'n/a';
+                    }
+                    row.appendChild(profilerCell);
+                    var requestState = 'ok';
+                    if (request.error) {
+                        requestState = 'error';
+                        if (state != "loading" && i > requestStack.length - 4) {
+                            state = 'error';
+                        }
+                    } else if (request.loading) {
+                        requestState = 'loading';
+                        state = 'loading';
+                    }
+                    row.className = 'sf-ajax-request sf-ajax-request-' + requestState;
+                }
+                var infoSpan = document.querySelectorAll(".sf-toolbar-ajax-info")[0];
+                var children = collectionToArray(tbody.children);
+                for (var i = 0; i < children.length; i++) {
+                    tbody.removeChild(children[i]);
+                }
+                tbody.appendChild(rows);
+                if (infoSpan) {
+                    var text = requestStack.length + ' call' + (requestStack.length > 1 ? 's' : '');
+                    infoSpan.textContent = text;
+                }
+            } else {
+                var cell = document.createElement('td');
+                cell.setAttribute('colspan', '4');
+                cell.textContent = "No AJAX requests yet.";
+                var row = document.createElement('tr');
+                row.appendChild(cell);
+                tbody.appendChild(row);
+            }
+        }
+        requestCounter[0].textContent = requestStack.length;
+        var className = 'sf-toolbar-ajax-requests sf-toolbar-status';
+        if (state == 'ok') {
+            className += ' sf-toolbar-status-green';
+        } else if (state == 'error') {
+            className += ' sf-toolbar-status-red';
+        } else {
+            className += ' sf-ajax-request-loading';
+        }
+        requestCounter[0].className = className;
+    };
+    var addEventListener;
+    var el = document.createElement('div');
+    if (!'addEventListener' in el) {
+        addEventListener = function (element, eventName, callback) {
+            element.attachEvent('on' + eventName, callback);
+        };
+    } else {
+        addEventListener = function (element, eventName, callback) {
+            element.addEventListener(eventName, callback, false);
+        };
+    }
+    if (window.XMLHttpRequest && XMLHttpRequest.prototype.addEventListener) {
+        var proxied = XMLHttpRequest.prototype.open;
+        XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
+            var self = this;                    /* prevent logging AJAX calls to static and inline files, like templates */
+            var path = url;
+            if (url.substr(0, 1) === '/') {
+                if (0 === url.indexOf('\x2Frestapi1\x2Fweb')) {
+                    path = url.substr(13);
+                }
+            } else if (0 === url.indexOf('http\x3A\x2F\x2Flocalhost\x2Frestapi1\x2Fweb')) {
+                path = url.substr(29);
+            }
+            if (!path.match(new RegExp("^\/(app(_[\\w]+)?\\.php\/)?_wdt"))) {
+                var stackElement = {loading: true, error: false, url: url, method: method, start: new Date()};
+                requestStack.push(stackElement);
+                this.addEventListener('readystatechange', function () {
+                    if (self.readyState == 4) {
+                        stackElement.duration = new Date() - stackElement.start;
+                        stackElement.loading = false;
+                        stackElement.error = self.status < 200 || self.status >= 400;
+                        extractHeaders(self, stackElement);
+                        Sfjs.renderAjaxRequests();
+                    }
+                }, false);
+                Sfjs.renderAjaxRequests();
+            }
+            proxied.apply(this, Array.prototype.slice.call(arguments));
+        };
+    }
+    return {
+        hasClass: hasClass,
+        removeClass: removeClass,
+        addClass: addClass,
+        getPreference: getPreference,
+        setPreference: setPreference,
+        addEventListener: addEventListener,
+        request: request,
+        renderAjaxRequests: renderAjaxRequests,
+        load: function (selector, url, onSuccess, onError, options) {
+            var el = document.getElementById(selector);
+            if (el && el.getAttribute('data-sfurl') !== url) {
+                request(url, function (xhr) {
+                    el.innerHTML = xhr.responseText;
+                    el.setAttribute('data-sfurl', url);
+                    removeClass(el, 'loading');
+                    (onSuccess || noop)(xhr, el);
+                }, function (xhr) {
+                    (onError || noop)(xhr, el);
+                }, '', options);
+            }
+            return this;
+        },
+        toggle: function (selector, elOn, elOff) {
+            var tmp = elOn.style.display, el = document.getElementById(selector);
+            elOn.style.display = elOff.style.display;
+            elOff.style.display = tmp;
+            if (el) {
+                el.style.display = 'none' === tmp ? 'none' : 'block';
+            }
+            return this;
+        }
+    }
+})();/*]]>*/</script>
+<script>/*<![CDATA[*/
+(function () {
+    Sfjs.load('sfwdtc1add4', '/restapi1/web/app_dev.php/_wdt/c1add4', function (xhr, el) {
+        el.style.display = -1 !== xhr.responseText.indexOf('sf-toolbarreset') ? 'block' : 'none';
+        if (el.style.display == 'none') {
+            return;
+        }
+        if (Sfjs.getPreference('toolbar/displayState') == 'none') {
+            document.getElementById('sfToolbarMainContent-c1add4').style.display = 'none';
+            document.getElementById('sfToolbarClearer-c1add4').style.display = 'none';
+            document.getElementById('sfMiniToolbar-c1add4').style.display = 'block';
+        } else {
+            document.getElementById('sfToolbarMainContent-c1add4').style.display = 'block';
+            document.getElementById('sfToolbarClearer-c1add4').style.display = 'block';
+            document.getElementById('sfMiniToolbar-c1add4').style.display = 'none';
+        }
+        Sfjs.renderAjaxRequests();                /* Handle toolbar-info position */
+        var toolbarBlocks = document.querySelectorAll('.sf-toolbar-block');
+        for (var i = 0; i < toolbarBlocks.length; i += 1) {
+            toolbarBlocks[i].onmouseover = function () {
+                var toolbarInfo = this.querySelectorAll('.sf-toolbar-info')[0];
+                var pageWidth = document.body.clientWidth;
+                var elementWidth = toolbarInfo.offsetWidth;
+                var leftValue = (elementWidth + this.offsetLeft) - pageWidth;
+                var rightValue = (elementWidth + (pageWidth - this.offsetLeft)) - pageWidth;                        /* Reset right and left value, useful on window resize */
+                toolbarInfo.style.right = '';
+                toolbarInfo.style.left = '';
+                if (leftValue > 0 && rightValue > 0) {
+                    toolbarInfo.style.right = (rightValue * -1) + 'px';
+                } else if (leftValue < 0) {
+                    toolbarInfo.style.left = 0;
+                } else {
+                    toolbarInfo.style.right = '-1px';
+                }
+            };
+        }
+    }, function (xhr) {
+        if (xhr.status !== 0) {
+            confirm('An error occurred while loading the web debug toolbar (' + xhr.status + ': ' + xhr.statusText + ').\n\nDo you want to open the profiler?') && (window.location = '/restapi1/web/app_dev.php/_profiler/c1add4');
+        }
+    }, {'maxTries': 5});
+})();/*]]>*/</script>
+</body>
+</html>
